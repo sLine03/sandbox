@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="ex.js"></script>
+</head>
+<body>
+    <form>
+        Rock, Paper Scissors
+        <div style="display: flex; flex-wrap: wrap; padding: 16px 0;">
+            <div style="display: flex;">
+                <input type="radio" name="playerChoice" id="rock" value="rock" onClick="setPlayerChoice(this.value)">
+                <label for="rock"><img src="rock.jfif"></label>
+            </div>
+            <div style="display: flex;">
+                <input type="radio" name="playerChoice" id="paper" value="paper" onClick="setPlayerChoice(this.value)">
+                <label for="paper"><img src="paper.jfif"></label>
+            </div>
+            <div style="display: flex; padding-bottom: 16px;">
+                <input type="radio" name="playerChoice" id="scissor" value="scissor" onClick="setPlayerChoice(this.value)">
+                <label for="scissor"><img src="scissors.jfif"></label>
+            </div>
+
+        </div>
+        <button type="button" onClick="playGame()" style="width:80%;">Play</button>
+
+    </form>
+    <div id="compChoiceTxt"></div>
+    <div id="resultTxt"></div>
+</body>
+
+</html>
